@@ -5,13 +5,20 @@ function submitForm(event) {
     if (validateEmail())
     {
         alert("Email: " + email + " Password: " + password + " Form Submitted Successfully!!");
-        // Yaha pr API call krnge and based on true or false niche wala kam krnge
         // API Call
-        if (true) {
-            window.location.href = "https://www.google.com";
-        } else {
-            window.location.href = "https://www.facebook.com"
-        }
+        fetch('http://localhost:9090/validateUser', {
+                method: 'POST',
+                headers : new Headers(),
+                body: JSON.stringify({email: email, password: password})
+            }).then((res) => res.json())
+            .then((data) =>  {
+                console.log(data);
+                if (data.status) {
+                    window.location.href = "http://localhost:8080/success.html";
+                } else {
+                    window.location.href = "http://localhost:8080/error.html"
+                }
+            }).catch((err) => console.log(err))
     }
 }
 
