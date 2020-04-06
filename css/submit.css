@@ -32,7 +32,7 @@ div.main {
     margin-top: 60px;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email] {
     width: 100%;
     height: 40px;
     padding: 5px;
@@ -77,4 +77,8 @@ label {
 #btn_name,
 #btn_tag {
     margin-left: 10px;
+}
+
+.proceed-to-login {
+    margin-left: 100px;
 }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peru Bhai Ka Sign in</title>
+    <link rel="stylesheet" href="css/submit.css" />
+    <script src="js/submit.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <form onsubmit="submitSignInForm(event)" method="POST" id="sign-in-form-id" class="form-class">
+                <h2>Peru Bhai Ka Sign In Screen</h2>
+                <label>First Name :</label>
+                <input type="text" name="fname" id="fname" placeholder="First Name" />
+                <label>Last Name :</label>
+                <input type="text" name="lname" id="lname" placeholder="Last Name" />
+                <label>Email Address :</label>
+                <input type="email" name="email" id="email" placeholder="Email Address" />
+                <label>Password :</label>
+                <input type="password" name="password" id="password" placeholder="Password" />
+                <input type="submit" value="Submit" />
+                <a class="proceed-to-login" href="/login.html">Proceed to Login</a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

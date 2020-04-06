@@ -1,0 +1,41 @@
+{
+  "validateUser": [],
+  "addUser": [
+    {
+      "name": "Aayush Sinha",
+      "email": "sinha.aayush01@gmail.com",
+      "password": "asfasf",
+      "id": 1
+    },
+    {
+      "name": "Vatsal Rahul",
+      "email": "vkrahul@gmail.com",
+      "password": "lucyIlove",
+      "id": 2
+    },
+    {
+      "name": "Rishav Ram",
+      "email": "iamgod@gmail.com",
+      "password": "bhagwanekh",
+      "id": 3
+    },
+    {
+      "name": "Raghwesh Anand",
+      "email": "raghweshll@gmail.com",
+      "password": "iammessi",
+      "id": 4
+    },
+    {
+      "name": "harsh raj",
+      "email": "Dogla@dogla.com",
+      "password": "dogla",
+      "id": 6
+    },
+    {
+      "name": "Rahul Sust",
+      "email": "rahul.sust@gmail.com",
+      "password": "iamsust",
+      "id": 7
+    }
+  ]
+}
