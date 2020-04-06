@@ -5,12 +5,12 @@ function submitForm(event) {
     if (validateEmail())
     {
         alert("Email: " + email + " Password: " + password + " Form Submitted Successfully!!");
+        let myHeaders = new Headers();
+        myHeaders.append('Content-Type', 'application/json');
         // API Call
         fetch('http://localhost:9090/validateUser', {
                 method: 'POST',
-                headers : {
-                    'Content-Type': 'application/json'
-                },
+                headers : myHeaders,
                 body: JSON.stringify({email: email, password: password})
             }).then((res) => res.json())
             .then((data) =>  {
