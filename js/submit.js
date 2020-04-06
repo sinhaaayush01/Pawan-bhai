@@ -8,7 +8,9 @@ function submitForm(event) {
         // API Call
         fetch('http://localhost:9090/validateUser', {
                 method: 'POST',
-                headers : new Headers(),
+                headers : {
+                    'Content-Type': 'application/json'
+                },
                 body: JSON.stringify({email: email, password: password})
             }).then((res) => res.json())
             .then((data) =>  {
